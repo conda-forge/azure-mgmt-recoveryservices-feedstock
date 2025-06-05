@@ -2,15 +2,15 @@ schema_version: 1
 
 context:
   name: azure-mgmt-recoveryservices
-  version: 3.0.0
+  version: "3.1.0"
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/azure-mgmt-recoveryservices-${{ version }}.tar.gz
-  sha256: df212dfadfbcc659c31231c3e170aab7c21144d172b0f88268ab0f5ad8e95882
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
+  sha256: 7f2db98401708cf145322f50bc491caf7967bec4af3bf7b0984b9f07d3092687
 
 build:
   number: 0
